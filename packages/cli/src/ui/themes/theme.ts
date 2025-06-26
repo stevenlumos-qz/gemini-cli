@@ -7,7 +7,7 @@
 import type { CSSProperties } from 'react';
 import { isValidColor, resolveColor } from './color-utils.js';
 
-export type ThemeType = 'light' | 'dark' | 'ansi' | 'custom';
+export type ThemeType = 'light' | 'dark' | 'ansi' | 'modus-operandi-tinted';
 
 export interface ColorsTheme {
   type: ThemeType;
@@ -83,6 +83,21 @@ export const ansiTheme: ColorsTheme = {
   DiffRemoved: 'red',
   Comment: 'gray',
   Gray: 'gray',
+};
+
+export const modusOperandiTintedTheme: ColorsTheme = {
+  type: 'modus-operandi-tinted',
+  Background: '#fbf7f0',
+  Foreground: '#000000',
+  LightBlue: '#0031a9',
+  AccentBlue: '#0031a9',
+  AccentPurple: '#731f71',
+  AccentCyan: '#005f5f',
+  AccentGreen: '#005e00',
+  AccentYellow: '#725500',
+  AccentRed: '#a60000',
+  Comment: '#595959',
+  Gray: '#595959',
 };
 
 export class Theme {
